@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(241, 71, 71, 0.8), rgba(250, 20, 20, 0.5)), url("background.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+#title {
+    padding: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+#survey-form {
+    justify-content: center;
+    margin-top: 5rem;
+    display: flex;
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#description {
+    padding: 2em;
+    flex: 1;
+    background-color: rgba(129, 9, 9, 1);
+    color: #fff;
+}
+
+.form_container {
+    padding: 2em;
+    flex: 2;
+    background-color: rgba(129, 9, 9, 0.8);
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid #fff 1px;
+    background: #f1f1f1;
+}
