@@ -1,3 +1,3 @@
 # survey-form
-simple survey form example [preview here](https://employee-surveyform.netlify.app/).
+simple survey form example using only pure html and css [preview here](https://employee-surveyform.netlify.app/).
 
