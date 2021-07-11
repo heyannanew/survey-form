@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Satisfaction Survey</title>
+</head>
+
+<body>
+    <div id="survey-form">
+        <div id="header">
+            <h1 id="title"> Employee Satisfaction Survey</h1>
+            <p id="description">Gathering information on employee satisfaction, this survey focuses on how employee feel about their job description, position within company and overall satisfactions. This survey asks questions about your experience working for The Coders.
+                <br> Thank you for sharing your opinions as well as your information.
+            </p>
+        </div>
+        <div class="form_container">
+            <form>
+                <form action="/submit">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your E-mail Adresss" required>
+                    <label for="position">Age : </label>
+                    <input type="number" id="number" name="age" placeholder="Enter Your Age" min="17" max="80" required>
+                    <label for="position">Position : </label>
+                    <select id="dropdown" name="position">
+                      <option disabled selected value>Select Your Job Position</option>
+                      <option value="front-end">Front End Developer</option>
+                      <option value="back-end">Back End Developer</option>
+                      <option value="full-stack">Full Stack Developer</option>
+                    </select>
+                    <p class="form_question"> What is your gender?</p>
+                    <input type="radio" id="gender" name="gender" value="Female">
+                    <label for="gender"> Female</label><br>
+                    <input type="radio" id="gender" name="gender" value="Male">
+                    <label for="gender"> Male</label>
+                    <br>
+                    <p class="form_question"> How many years have you been with The Coders?</p>
+                    <input type="radio" id="years" name="years" value="less-than-a-year">
+                    <label for="gender"> Less than a year</label><br>
+                    <input type="radio" id="years" name="years" value="between-1-and-3-years">
+                    <label for="gender"> 1-3 years </label><br>
+                    <input type="radio" id="years" name="years" value="between-1-and-6-years">
+                    <label for="gender"> 4-6 years</label><br>
+                    <input type="radio" id="years" name="years" value="more-than-six-years">
+                    <label for="gender"> More than six years </label>
+                    <br>
+                    <!--p class="form_question"> What is your age?</p>
+                    <input type="radio" id="age" name="age" value="18-29">
+                    <label for="gender"> 18-29 </label><br>
+                    <input type="radio" id="age" name="age" value="30-39">
+                    <label for="gender"> 30-39</label><br>
+                    <input type="radio" id="age" name="age" value="40-55">
+                    <label for="gender"> 40-55</label><br>
+                    <input type="radio" id="age" name="age" value="more-than-55-years">
+                    <label for="gender"> 55+years</label>
+                    <br>-->
+
+                    <p class="form_question"> Factors Affecting Job Satisfaction: <span> (Check all that apply) </span>
+                    </p>
+                    <input name="factors" value="working-conditions" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Working Conditions</label><br>
+                    <input name="factors" value="financial-rewards" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Financial Rewards</label><br>
+                    <input name="factors" value="workload-and-stress-level" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Workload and Stress Level</label><br>
+                    <input name="factors" value="relationships-with-supervisors" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Relationships with Supervisors</label><br>
+                    <input name="factors" value="communication" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Communication</label><br>
+                    <input name="factors" value="opportunity-for-advancement" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Opportunity for Advancement</label><br>
+                    <input name="factors" value="work-performance" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Work Performance</label><br>
+                    <input name="factors" value="leaderships" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Leaderships </label><br>
+                    <input name="factors" value="personal-growth" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Personal Growth</label><br>
+                    <input name="factors" value="office-hygiene-and-facility" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Office Hygiene and Facility</label><br>
+                    <input name="factors" value="job-challenge" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Job Challenge</label><br>
+                    <input name="factors" value="teamwork" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Teamwork</label><br>
+                    <input name="factors" value="quality-of-supervision" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Quality of Supervision</label><br>
+                    <input name="factors" value="security-of-job" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Security of Job</label><br>
+                    <input name="factors" value="salary" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Salary</label><br>
+                    <input name="factors" value="rewards" type="checkbox" id="input-checkbox">
+                    <label for="factors"> Rewards</label>
+                    <br>
+
+
+                    <p class="form_question"> Do you have any suggestions or specific recommendation to improve employee morale?</p>
+                    <br>
+                    <textarea name="comment" form="usrform" class="text_area">Enter text here...</textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
